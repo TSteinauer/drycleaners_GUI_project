@@ -1,4 +1,5 @@
 # drycleaners_GUI_project 12/3/2023
+I HIGHLY RECOMMEND RUNNING THIS ON IntelliJ IDE it may not build on other IDE's
 JavaFX Application for Dry Cleaners. The user is the cashier and will use the application to clock in and out, add customers, accept orders from customers, and  ring orders out for customers
 Step 1. Run the program from the HelloApplication.java file (I created this project in IntelliJ)
 Step 2. It should bring up a login screen where you fill in the first and last name text areas with your first and last name. For the 4-digit key pick a 4-digit number that you can easily remember. 
