@@ -20,7 +20,7 @@
                         <Font name="Bauhaus 93" size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="clockOut" layoutX="253.0" layoutY="242.0" mnemonicParsing="false" onAction="#clock_Out" prefHeight="25.0" prefWidth="187.0" text="Clock Out" >
+                  <Button fx:id="clockOut" layoutX="253.0" layoutY="242.0" mnemonicParsing="false" onAction="#clock_Out" prefHeight="25.0" prefWidth="187.0" text="Clock Out" visible="false">
                      <font>
                         <Font name="Bauhaus 93" size="22.0" />
                      </font>

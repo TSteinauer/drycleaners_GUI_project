@@ -19,4 +19,10 @@ public class HelloApplication extends Application {
         stage.setScene(login);
         stage.show();
     }
+        public static void main(String[] args) {
+        launch(args);
+    }
 }
+
+
+
