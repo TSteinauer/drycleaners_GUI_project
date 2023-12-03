@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.TagInController">
+    <children>
+        <AnchorPane layoutY="-3.0" prefHeight="1000.0" prefWidth="1614.0" style="-fx-background-color: #5e60ce;">
+            <children>
+                <VBox prefHeight="1000.0" prefWidth="252.0" style="-fx-background-color: #6495ED;">
+                    <children>
+                        <Button layoutX="10.0" layoutY="554.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Home" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#findCustomer" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Find Customer" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clothesTagIn" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: #EE82EE; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Clothes Tag In" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#addNewCust" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Order Pick Up" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="282.0" mnemonicParsing="false" onAction="#clockIn" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Clock In/Out" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="136.0" prefWidth="264.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Logout" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <Pane layoutX="644.0" layoutY="14.0" prefHeight="122.0" prefWidth="651.0" style="-fx-background-color: #fdfcdc;">
+                    <children>
+                        <Text layoutX="260.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAG IN" wrappingWidth="505.13671875">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+            <Pane layoutX="340.0" layoutY="155.0" prefHeight="708.0" prefWidth="1176.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="92.0" layoutY="70.0" prefHeight="40.0" prefWidth="306.0" text="Customer Phone#:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="116.0" prefHeight="40.0" prefWidth="138.0" text="Clothing type:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="162.0" prefHeight="40.0" prefWidth="138.0" text="Color:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="211.0" prefHeight="40.0" prefWidth="138.0" text="Quantity:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="258.0" prefHeight="40.0" prefWidth="138.0" text="Tag ID:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Tphone" layoutX="270.0" layoutY="77.0" prefHeight="27.0" prefWidth="343.0" promptText="ex. 8283345268" />
+                  <TextField fx:id="Ttype" layoutX="270.0" layoutY="123.0" prefHeight="27.0" prefWidth="343.0" promptText="Shirt, pants, sports coat, etc." />
+                  <TextField fx:id="Tcolor" layoutX="270.0" layoutY="169.0" prefHeight="27.0" prefWidth="343.0" promptText="red,yellow,blue, etc." />
+                  <TextField fx:id="Tquantity" layoutX="270.0" layoutY="218.0" prefHeight="27.0" prefWidth="69.0" promptText="ex. 4" />
+                  <TextField fx:id="Tid" layoutX="270.0" layoutY="265.0" prefHeight="27.0" prefWidth="145.0" promptText="ie. 4 item 4a340" />
+                  <Button layoutX="270.0" layoutY="375.0" mnemonicParsing="false" onAction="#submitOrder" prefHeight="70.0" prefWidth="243.0" style="-fx-background-color: lime;" text="Submit">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="92.0" layoutY="305.0" prefHeight="40.0" prefWidth="138.0" text="Cost:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cost" layoutX="270.0" layoutY="312.0" prefHeight="27.0" prefWidth="69.0" promptText="\$" />
+               </children>
+            </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

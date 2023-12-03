@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1411.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.HelloController">
+  <left>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+            <Pane layoutX="99.0" layoutY="15.0" prefHeight="839.0" prefWidth="1335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="1000.0" fitWidth="1800.0" layoutX="-91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../picture.png" />
+                     </image></ImageView>
+                  <Pane fx:id="numPane" layoutX="643.0" layoutY="345.0" prefHeight="52.0" prefWidth="393.0" style="-fx-background-color: transparent;" />
+                  <Label fx:id="lerror" layoutX="651.0" layoutY="356.0" prefHeight="30.0" prefWidth="453.0" textFill="RED">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="22.0" />
+                     </font>
+                  </Label>
+              <Button fx:id="login" layoutX="530.0" layoutY="480.0" mnemonicParsing="false" onAction="#login_action" onMouseEntered="#drag_shadow" onMouseExited="#drop_shadow" onMousePressed="#bttn_pressed" onMouseReleased="#bttn_released" style="-fx-background-color: #76D7C4;" text="Submit" textFill="#030303">
+                <font>
+                  <Font name="Algerian" size="16.0" />
+                </font>
+              </Button>
+                  <Label layoutX="186.0" layoutY="420.0" text="Enter Your 4 digit Key" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="key" layoutX="494.0" layoutY="423.0" prefHeight="36.0" prefWidth="149.0" promptText="Enter Cashier Key" />
+                  <Label fx:id="kerror" layoutX="659.0" layoutY="427.0" prefHeight="30.0" prefWidth="453.0" textFill="RED">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+        <Label layoutX="312.0" layoutY="274.0" text="First Name" textFill="RED">
+          <font>
+            <Font name="System Bold" size="29.0" />
+          </font>
+        </Label>
+        <Label layoutX="314.0" layoutY="351.0" text="Last Name" textFill="RED">
+          <font>
+            <Font name="System Bold" size="29.0" />
+          </font>
+        </Label>
+        <TextField fx:id="fname" layoutX="494.0" layoutY="278.0" prefHeight="36.0" prefWidth="149.0" promptText="Enter Firstname" />
+        <TextField fx:id="lname" layoutX="494.0" layoutY="354.0" prefHeight="36.0" prefWidth="149.0" promptText="Enter Lastname" />
+        <Label layoutX="442.0" layoutY="26.0" text="Dry Cleaner Login Page" textFill="#2818ed">
+          <font>
+            <Font name="Bodoni MT Black" size="48.0" />
+          </font>
+        </Label>
+            <Label fx:id="ferror" layoutX="675.0" layoutY="282.0" prefHeight="32.0" prefWidth="429.0" text=" ">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="22.0" />
+               </font></Label>
+            <Button fx:id="home" disable="true" layoutX="427.0" layoutY="526.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="83.0" prefWidth="255.0" style="-fx-background-color: #76D7C4;" text="Go To Home Screen" visible="false">
+               <font>
+                  <Font name="Algerian" size="23.0" />
+               </font>
+            </Button>
+      </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+    </AnchorPane>
+  </left>
+  <right>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+  </right>
+</BorderPane>
